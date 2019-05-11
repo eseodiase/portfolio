@@ -14,7 +14,7 @@
 
 <meta http-equv="X-US-Compatible" content=""ie=edge">
 
-<title>Ese Odiase</title> 
+<title>Ese Odiase Portfolio</title> 
 
 <meta name="description" content="Available, competent, junior front-end website developer. One who is always opened to improvement, who takes clients seriously, get their jobs done right on time and meet or exceed their expectations." />
 
@@ -29,15 +29,20 @@
 <link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.main.css" rel="stylesheet"> 
 
 
+ <link rel="stylesheet" href="https://
+
+ cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 ion-icon{
 
 
-content: "logo-facebook";
+content: "";
 
 font-size: 100px;
 
 }
+
 
 
 .logo{
@@ -728,8 +733,18 @@ height: 315px;
 margin-left: 50px;
 
 }
+.ad{
+	width: 280px;
+	height: 300px;
+}
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
+
+.main{
+
+    margin: 18px;
+
+}
 
 body{
 
@@ -789,8 +804,6 @@ body{
 
     text-align: center;
 
-    font-weight: bold;
-
     padding: 0px;
 
     border-bottom: solid #fff;
@@ -826,9 +839,8 @@ label{
 .box{
 
     width: 98%;
-
-
-
+	padding: 0px;
+	margin: 0px;
     }
 
     
@@ -836,18 +848,20 @@ label{
 .boxes{
 
     width: 100%;
-
+	padding: 0px;
+	margin: 0px;
 }
 
 input[type="button"]
 
 {
 
-    font-size: 30;
+    font-size: 24px;
 
     text-align: center;
 
-    width: 20%;
+    width: 22%;
+    height: 36px;
 
     float: center;
 
@@ -862,10 +876,10 @@ input[type="button"]
 
 input[type="reset"]{
 
-    font-size: 30;
+    font-size: 24px;
 
-    width: 20%;
-
+    width: 22%;
+	height: 36px;
     margin-top: 5px;
 
     margin-left: 4px;
@@ -898,19 +912,20 @@ input[type="reset"]{
 
 input[type="textfield"]{
 
-    width: 90%;
+    width: 100%;
 
     height: 100px;
 
 margin-left: 0px;
+	padding: 5px;
 
     margin-bottom: 5px;
 
-    font-size: 50px;
+    font-size: 40px;
 
     border-radius: 2%;
 
-    box-shadow: 0 0 15 19(rgb);
+    box-shadow: 3px 2px 3px 1px grey;
 
     border: none;
 
@@ -935,7 +950,7 @@ h3{
 
 .column {
 
-    border:     none;
+    border: none;
 
 float: none;
 
@@ -945,7 +960,7 @@ width: 100%;
 
 height: auto;
 
-box-shadow: 2px 2px 5px 5px yellowgreen;
+box-shadow: none;
 
 }
 
@@ -957,6 +972,7 @@ box-shadow: 2px 2px 5px 5px yellowgreen;
 content: "";
 
 display: table;
+margin: 0px;
 
 }
 
@@ -991,9 +1007,10 @@ color: #234;
 
     border-radius: 8px;
 
-    width: 92%;
+    width: 94%;
 
-color: #234;
+	color: #234;
+	box-shadow: 3px 2px 3px 1px grey;
 
 }
 
@@ -1032,10 +1049,16 @@ display: none;
 
 height: 100px;;
 
-width: 90%;
+width: 100%;
 
 margin-left: 0px; 
+font-size: 18px;
+padding: 5px;
+    border-radius: 2%;
 
+    box-shadow: 3px 2px 3px 1px grey;
+
+    border: none;
 }
 
 
@@ -1105,12 +1128,15 @@ a:active{
 }
 
 .embed{
-width: 95%;
+width: 100%;
 height: 300px;
 margin-left: 0px;
 
 }
-
+.ad{
+	width: 100%;
+	height: 250px;
+}
 </style>
 
 </head>
@@ -1124,7 +1150,7 @@ margin-left: 0px;
 <div class="logo">
 <a href="https://en.wikipedia.org/wiki/Front-end_web_development">
 
-<span style="color:yellowgreen">Front</span>End Developer </a></div>
+<span style="color:yellowgreen">Front</span>-end Developer </a></div>
 
 <label for="toggle">&#9776;</label>
 
@@ -1156,16 +1182,17 @@ margin-left: 0px;
 
 <div class="centered-text">
 
-<h4>I am the Junior Web Developer you've been searching for.</h4>
+<h4 style="font-family:sans-serif, calibri;">
+I am the Junior Front-end Web Developer you've been searching for.</h4>
 
 </br>
-
+<a href="#X">
 <div class="centered-button">
 
 <input type="button" class="contact" value="Get in touch"/>
 
 </div>
-
+</a>
 </br>
 
 <a href="https://www.facebook.com/eximious.g">
@@ -1315,14 +1342,17 @@ margin-left: 0px;
 
 <h2><span> Measurement </span> Flipper</h2>
 
-<p><label>Feet To</label> 
-
-<input id="enterNum" type="number" placeholder="Feet To"
+<p >
+<label style="display:none">
+Convert Feet to other Lengths
+</label>
+<input id="enterNum" type="number" 
+placeholder="Convert Feet to other Lengths"
 
 onclick="ConvertThis(this.value)" onchange="ConvertThis(this.value)"></p>
 
 <p>CM: <span id="cm" class="measurement"></span> | INCHES: <span id="inches" class="measurement"></span></p>
-<p>KILOMETER: <span id="kilometer" class="measurement"></span> | METER: <span id="meter" class="measurement"></span></p>
+<p>KILOMETERS: <span id="kilometer" class="measurement"></span> | METERS: <span id="meter" class="measurement"></span></p>
 <p>MILES: <span id="miles" class="measurement"></span> | YARDS: <span id="yards" class="measurement"></span></p>
 
 </div>
@@ -1356,53 +1386,30 @@ encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
 <div class="row">
 
-<div class="column"><h3><span style="background-color:yellowgreen"> ABOUT </span> </h3>
+<div class="column">
+<article>
+<h3><span style="background-color:yellowgreen"> ABOUT </span> </h3>
+<section>
 
-<p>
+<p style="font-family:times, serif; font-size:12pt; font-style:italic;">
 
-My name is Ese Gypsy Odiase. 
-
-I am from Edo State and I reside in Lagos,
-
-Nigeria.
-
-I am a self-motivated computer enthusiast with strong
-
-passion for graphics and responsive
-
-web design. </p>
-
-
-<p> You can check out my <a href="#">portfolio,</a>
-
-<a href="#">YouTube Channel,</a>
-
-<a href="#">Blog Post,</a>
-
-and follow me on social media:<br>
-
-
-<a href="#">facebook</a><br>
-
-<a href="#">instagram</a><br>
-
-<a href="#">twitter</a>
-
-all @exay_f24
-
+Skilled wordpress and Front-end Developer, 
+author of<a href="https://shapemytech.wordpress.com">
+Shape MyTech (SMT),</a>
+graduate of Computer Science and Music Education. Ese works for a living but loves to build websites, loves learning anything about web design and more. With my experience I can design high-quality and responsive websites that fits into any device. Hire now.   
 </p>
-
-
+</section>
+</article>
 </div> 
 
 
 <div class="column"><h3>
 
-<span style="background-color:yellowgreen"> GET IN TOUCH </span> </h3>
+<span style="background-color:yellowgreen"> HIRE NOW </span> </h3>
 
-<form action="https://formspree.io/odiasegypsy@gmail.com"method="POST">
+<form id="X" action="https://formspree.io/odiasegypsy@gmail.com"method="POST">
 
-Name: <input type="text" name="name" class="transparent"><br>
+Name : <input type="text" name="name" class="transparent"><br>
 
 E-mail: <input type="email" name="_replyto" class="transparent"><br><br>
 
@@ -1422,13 +1429,23 @@ E-mail: <input type="email" name="_replyto" class="transparent"><br><br>
 
 <br></br>
 
-<div class="after-float"><h3>Place Ads</h3>
-
-<p>Dear visitors, feel free to contact me for a 3 days free advert placement. Note: First come, first serve policy
-
-will be applied to visitors of this site who would like to advertise here. You will be duely notified 
-
-on when your ad starts and the time its ends. Thank you for considering...</p></div>
+<div class="after-float">
+<article>
+<h2 style="font-family:cursive;">
+Place Ads for Free</h2>
+<section>
+<p style="font-family:cursive; font-size:24pt;">
+Dear visitors, please feel free to
+use the <a href="#X"><span>
+hire now</span></a> form or any of the
+social media icons to
+ contact me anytime for free advert 
+ placement. Cheers!
+ 
+</p>
+</section>
+</article>
+</div>
 
 </br>
 
@@ -1439,7 +1456,7 @@ on when your ad starts and the time its ends. Thank you for considering...</p></
 
 <a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term=">
 
-<img src="https://shapemytech.files.wordpress.com/2019/04/20190424_183114.jpg" width="280" height="300"/></a>
+<img src="https://shapemytech.files.wordpress.com/2019/04/20190424_183114.jpg" class="ad"/></a>
 
 </div>
 
@@ -1447,8 +1464,7 @@ on when your ad starts and the time its ends. Thank you for considering...</p></
 
 
 <a href="http://c.jumia.io/?a=152896&c=433&p=r&E=kkYNyk2M4sk%3d&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term=">
-
-<img src="https://shapemytech.files.wordpress.com/2019/04/20190418_223832.jpg?w=292&zoom=2" width="280" height="300"/></a>
+<img src="https://shapemytech.files.wordpress.com/2019/04/20190418_223832.jpg?w=292&zoom=2" class="ad"/></a>
 
 </div>
 
@@ -1457,8 +1473,7 @@ on when your ad starts and the time its ends. Thank you for considering...</p></
 
 <a href="http://c.jumia.io/?a=152896&c=11&p=r&E=kkYNyk2M4sk%3d&ckmrdr=&utm_source=cake&utm_medium=affiliation&utm_campaign=152896&utm_term=">
 
-<img src="https://shapemytech.files.wordpress.com/2019/04/20190421_204450.jpg?w=292&zoom=2" width="280" height="300"/></a>
-
+<img src="https://shapemytech.files.wordpress.com/2019/04/20190421_204450.jpg?w=292&zoom=2" class="ad"/></a>
 </div>
 
 
@@ -1481,19 +1496,23 @@ on when your ad starts and the time its ends. Thank you for considering...</p></
 
 <h3>Recent Blog Post</h3>
 
-<p class="pcenter"><a href="https://shapemytech.wordpress.com/2019/04/15/how-to-get-comfortable-using-a-computer/">
+<p class="pcenter">
+<a href="https://shapemytech.wordpress.com/2019/04/15/how-to-get-comfortable-using-a-computer/">
 
-    How to Avoid Computer Health Issues.</a><br>
+How to Avoid Computer Health Issues.</a><br>
 
 <a href="https://shapemytech.wordpress.com/2019/04/16/learning-mouse-and-keyboard-techniques/">
 
-Learning Mouse and Keyboard Techniques.</a></p>
+Learning Mouse and Keyboard Techniques.</a><br>
 
+<a href="https://shapemytech.wordpress.com">
+More</a>
+</p>
 </div>
 
 <div class="boxes">
 
-<!--type in nothing-->
+
 
 <h3><a href="#">BACK TO TOP</a></h3>
 
@@ -1530,9 +1549,15 @@ Learning Mouse and Keyboard Techniques.</a></p>
 
 <h3>HTML Tutorial</h3>
 
-<p class="pright"> <a href="#">About</a><br>
+<p class="pright">
+<a href="https://youtu.be/uu5bZgkOfLU">
+Introduction to HTML.</a><br>
 
-<a href="#">Contact</a></p>
+<a href="https://youtu.be/K_orkTxmdtM">
+Image Sizing.</a><br>
+<a href="https://www.youtube.com/playlist?list=PLtNNUe0i2qTRfCNv3WlY5wqU5wkr0GThE">
+More</a>
+</p>
 
 
 
@@ -1584,4 +1609,7 @@ document.getElementById("yards").innerHTML = ValNum/0.33333;
 
 
 
+    
+    
+    
     
