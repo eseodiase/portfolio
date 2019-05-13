@@ -1532,8 +1532,6 @@ SMT | Ese G Odiase |
 </div>
 
 
-<script src="https://unpkg.com/ionicons@4.2.1/dist/ionicons.js"> </script>
-
 <script>
 
 function ConvertThis(ValNum) {
@@ -1550,8 +1548,17 @@ document.getElementById("miles").innerHTML = ValNum/0.00018939;
 
 document.getElementById("yards").innerHTML = ValNum/0.33333;
 }
-
 </script>
+<script>
+function backspace() {
+    document.calculator.ans.value+= "";
+    document.calculator.ans.value
+    = document.calculator.ans.value.substr(0, document.calculator.ans.value.length - 1);
+    document.getElementById("del").innerHTML 
+    = document.calculator.ans.value;
+    }
+</script>
+<script src="https://unpkg.com/ionicons@4.2.1/dist/ionicons.js"> </script>
 
 </body>
 
